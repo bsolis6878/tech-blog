@@ -6,8 +6,7 @@ const passwordCheck = (event) => {
 
     if (password1.value !== password2.value) {
         alert('Passwords do not match');
-    } else {
-        alert('Passwords match');
+        return;
     };
 };
 

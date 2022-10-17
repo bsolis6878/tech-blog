@@ -1,7 +1,18 @@
-<ol class="post-list">
+<div class="opener">
+    <h1>Welcome to the Tech Blog!</h1>
+        <span>Here at the Tech Blog we post about everything and anything tech related!</br>
+        Don't see any posts yet? Login to create an account and join the conversation!</span>
+</div>
+
+<ol>
     {{#each posts as |post|}}
     <li>
-        {{> post-info post}}
+        <article class="main-page">
+            <h3>{{title}}</h3>
+            <div>
+                by {{user.username}} on {{format_date created_at}}
+            </div>
+        </article>
     </li>
     {{/each}}
 </ol>

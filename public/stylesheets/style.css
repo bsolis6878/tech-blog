@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     background-color: #C01EFF;
     padding: 20px;
+    border-bottom: 2px solid black;
 }
 
 a {
@@ -58,7 +59,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-.dashboard-posts {
+.dashboard-posts, .main-page {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -72,7 +73,19 @@ ol li {
     list-style-type: none;
 }
 
-.single-post {
+.single-post, .main-page {
     padding: 20px;
     text-align: center;
+}
+
+.main-page div {
+    padding: 10px;
+}
+
+.opener {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 100px 50px 100px;
+    border-bottom: 2px solid black;
 }

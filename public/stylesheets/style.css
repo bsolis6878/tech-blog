@@ -57,3 +57,22 @@ body {
     background-color: #C01EFF;
     border-bottom: 2px solid black;
 }
+
+.dashboard-posts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol {
+    padding: 0px;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.single-post {
+    padding: 20px;
+    text-align: center;
+}

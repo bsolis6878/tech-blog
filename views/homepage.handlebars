@@ -1,1 +1,7 @@
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam facere, nam quidem qui veniam vitae inventore quae minima reiciendis est molestias ipsum quam nihil rerum officia commodi ullam consectetur minus?
+<ol class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{> post-info post}}
+    </li>
+    {{/each}}
+</ol>

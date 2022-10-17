@@ -10,12 +10,14 @@ header {
     padding: 20px;
     border-bottom: 2px solid black;
 }
-
 a {
-    padding: 20px;
-    font-size: 18px;
     text-decoration: none;
     color: black;
+}
+
+nav a {
+    padding: 20px;
+    font-size: 18px;
 }
 
 #logout {
@@ -88,4 +90,20 @@ ol li {
     text-align: center;
     margin: 100px 100px 50px 100px;
     border-bottom: 2px solid black;
+}
+
+.content {
+    border: 2px solid black;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+#comment-body {
+    width: 400px;
+    height: 100px;
 }

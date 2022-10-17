@@ -6,13 +6,15 @@
 
 <ol>
     {{#each posts as |post|}}
-    <li>
-        <article class="main-page">
-            <h3>{{title}}</h3>
-            <div>
-                by {{user.username}} on {{format_date created_at}}
-            </div>
-        </article>
-    </li>
+    <a href="/post/{{id}}">
+        <li>
+            <article class="main-page">
+                <h3>{{title}}</h3>
+                <div>
+                    by {{user.username}} on {{format_date created_at}}
+                </div>
+            </article>
+        </li>
+    </a>
     {{/each}}
 </ol>

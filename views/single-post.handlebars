@@ -1,0 +1,18 @@
+<li>
+    <article class="main-page">
+        <h3>{{post.title}}</h3>
+        <div>
+            by {{post.user.username}} on {{format_date post.created_at}}
+        </div>
+        <div class="content">
+            {{post.content}}
+        </div>
+    </article>
+</li>
+
+{{#if loggedIn}}
+<form class="comment-form">
+    <textarea id="comment-body"></textarea>
+    <button type="submit">Add comment</button>
+</form>
+{{/if}}

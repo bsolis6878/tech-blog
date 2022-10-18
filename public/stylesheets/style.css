@@ -41,7 +41,7 @@ body {
     padding: 50px;
 }
 
-.login-form div, span, .signup-form div {
+.login-form div, .signup-form div {
     padding: 10px;
 }
 
@@ -92,6 +92,10 @@ ol li {
     border-bottom: 2px solid black;
 }
 
+.opener span {
+    line-height: 1.5;
+}
+
 .content {
     border: 2px solid black;
 }
@@ -106,4 +110,17 @@ ol li {
 #comment-body {
     width: 400px;
     height: 100px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: black 2px solid;
+    margin: 15px;
+}
+
+.comments span {
+    margin: 5px;
 }

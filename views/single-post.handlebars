@@ -16,3 +16,15 @@
     <button type="submit">Add comment</button>
 </form>
 {{/if}}
+
+{{#each post.comments as |comment|}}
+    <div class="comments">
+        <span>{{comment.comment_text}}</span>
+        <span><b>{{comment.user.username}}, {{format_date comment.created_at}}</b></span>
+    </div>
+{{/each}}
+
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

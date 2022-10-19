@@ -1,0 +1,28 @@
+<div class="edit">
+    <h2>
+        Edit Post
+    </h2>
+
+    <form class="edit-post-form">
+        <li>
+            <article class="main-page">
+                <input type="text" value="{{post.title}}" />
+                <div>
+                    by {{post.user.username}} on {{format_date post.created_at}}
+                </div>
+                <div class="content">
+                    <textarea>{{post.content}}</textarea>
+                </div>
+            </article>
+        </li>
+    </form>
+
+    <div>
+        <button id="save">Save post</button>
+        <button id="delete">Delete post</button>
+    </div>
+
+    <a href="/dashboard"> &larr; Back to dashboard</a>
+</div>
+
+<script src="/javascript/edit-delete.js"></script>

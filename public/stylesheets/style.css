@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -10,6 +14,7 @@ header {
     padding: 20px;
     border-bottom: 2px solid black;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -31,7 +36,18 @@ nav a {
 }
 
 body {
-    background-color: #F0CCFD;
+    background-image: linear-gradient(to bottom right, #F0CCFD, #C01EFF);
+}
+
+.homepage-post {
+    border: 3px black solid;
+    margin-bottom: 40px;
+}
+
+ol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .login-form, .new-post-form, .signup-form {
@@ -88,12 +104,17 @@ ol li, .edit li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 100px 100px 50px 100px;
+    margin: 50px 100px;
     border-bottom: 2px solid black;
+    padding-bottom: 30px;
 }
 
 .opener span {
     line-height: 1.5;
+}
+
+.opener h1 {
+    margin-bottom: 5px;
 }
 
 .content {

@@ -66,6 +66,7 @@ ol {
     align-items: center;
     flex-direction: column;
     border: 2px solid black;
+    width: 80%;
 }
 
 .new-post-container h1, label, button {
@@ -75,6 +76,17 @@ ol {
 .new-post-header {
     background-color: #C01EFF;
     border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+#post-title {
+    width: 40%;
+}
+
+#post-content {
+    width: 60%;
+    height: 10vh;
 }
 
 .dashboard-posts, .main-page {
@@ -160,4 +172,27 @@ ol li, .edit li {
 .edit textarea {
     width: 400px;
     height: 100px;
+}
+
+button {
+    border: solid black 2px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EDBAFF;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding-top: 40px
+    }
+
+    html {
+        height: auto;
+    }
+
+    body {
+        height: 100%;
+    }
 }

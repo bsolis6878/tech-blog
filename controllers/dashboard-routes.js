@@ -13,6 +13,7 @@ router.get('/', withAuth, (req, res) => {
             'title',
             'created_at'
         ],
+        order: [['createdAt', 'DESC']],
         include: [
             {
                 model: Comment,

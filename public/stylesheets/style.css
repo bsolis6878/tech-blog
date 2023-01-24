@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-html {
+html, body {
     height: 100%;
 }
 
@@ -20,8 +20,8 @@ a {
     color: black;
 }
 
-nav a {
-    padding: 20px;
+nav {
+    margin: 20px;
     font-size: 18px;
 }
 
@@ -31,16 +31,18 @@ nav a {
     padding: 0;
     text-decoration: none;
     font-size: 16px;
-    padding: 20px;
+    padding-left: 20px;
     cursor: pointer;
 }
 
 body {
     background-image: linear-gradient(to bottom right, #F0CCFD, #C01EFF);
+    background-attachment: fixed;
 }
 
 .homepage-post {
     border: 3px black solid;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
@@ -103,13 +105,29 @@ ol li, .edit li {
     list-style-type: none;
 }
 
-.single-post, .main-page {
+.single-post {
+    margin: 20px;
     padding: 20px;
     text-align: center;
+    border: 3px solid black;
 }
 
-.main-page div {
-    padding: 10px;
+.dashboard-posts h2 {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.single-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+.content {
+    margin: 20px;
 }
 
 .opener {
@@ -129,10 +147,6 @@ ol li, .edit li {
     margin-bottom: 5px;
 }
 
-.content {
-    border: 2px solid black;
-}
-
 .comment-form {
     display: flex;
     flex-direction: column;
@@ -145,13 +159,19 @@ ol li, .edit li {
     height: 100px;
 }
 
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .comments {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-bottom: black 2px solid;
     margin: 15px;
+    padding: 10px;
+    border: solid black 2px;
 }
 
 .comments span {
@@ -167,11 +187,16 @@ ol li, .edit li {
 
 .edit input {
     width: 300px;
+    margin: 10px;
 }
 
 .edit textarea {
     width: 400px;
     height: 100px;
+}
+
+.edit a {
+    margin-top: 15px;
 }
 
 button {
@@ -182,17 +207,13 @@ button {
     background-color: #EDBAFF;
 }
 
+input, textarea {
+    border: 1px solid black;
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         padding-top: 40px
-    }
-
-    html {
-        height: auto;
-    }
-
-    body {
-        height: 100%;
     }
 }
